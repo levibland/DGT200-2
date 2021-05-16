@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <!-- Site Metadata -->
+    <head>
+        <!-- Open Sans font provider -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+        <!-- Embedded stylesheet -->
+        <link href="./main.css" rel="stylesheet" />
+
+        <!-- Favicon -->
+        <link rel="icon" href="./assets/favicon.ico" />
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/dcc3b23e04.js" crossorigin="anonymous"></script>
+
+        <!-- Title -->
+        <title>Feng Shui</title>
+    </head>
+
+    <!-- Landing page markup -->
+    <body>
+        <!-- Mobile Navigation -->
+        <div class="SidebarContainer" onClick="setIsOpen">
+            <div class="Icon" onClick="setIsOpen">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="SidebarWrapper">
+                <ul class="SidebarMenu">
+                    <a href="#about" class="SidebarLink">
+                        About
+                    </a>
+                    <a href="#learn" class="SidebarLink">
+                        Learn
+                    </a>
+                    <a href="#courses" class="SidebarLink">
+                        Courses
+                    </a>
+                    <a href="#join" class="SidebarLink">
+                        Join
+                    </a>
+                </ul>
+                <div class="SideBtnWrap">
+                    <a href="#courses" class="SidebarRoute">Courses</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="Nav">
+            <div class="NavbarContainer">
+                <a href="#top" class="NavLogo">
+                    <img src="./assets/fuchsialogo.png" alt="Logo" class="LogoImg"/>
+                </a>
+                <div class="MobileIcon" onClick="setIsOpen">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="NavMenu">
+                    <li class="NavItem">
+                        <a href="#about" class="NavLink">About</a>
+                    </li>
+                    <li class="NavItem">
+                        <a href="#learn" class="NavLink">Learn</a>
+                    </li>
+                    <li class="NavItem">
+                        <a href="#courses" class="NavLink">Courses</a>
+                    </li>
+                    <li class="NavItem">
+                        <a href="#join" class="NavLink">Join</a>
+                    </li>
+                </ul>
+                <nav class="NavBtn">
+                    <a href="#courses" class="NavBtnLink">Courses</a>
+                </nav>
+            </div>
+        </nav>
+        <div class="HeroContainer" id="top">
+            <div class="HeroBg">
+                <img src="./assets/fuchsiasunset.png" alt="Sunset" class="ImageBg"/>
+            </div>
+            <div class="HeroContent">
+                <h1 class="HeroH1">Learn Web Development For Free.</h1>
+                <p class="HeroP">We provide free courses that teach the basics of web development. Join us today!</p>
+                <div class="HeroBtnWrapper">
+                    <a href="#courses" class="HeroButton">
+                        Courses <i class="fas fa-chevron-right arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="InfoContainer dark" id="about">
+            <div class="InfoWrapper">
+                <div class="InfoRow">
+                    <div class="Column1">
+                        <div class="TextWrapper">
+                            <p class="TopLine">About</p>
+                            <h1 class="Heading light">We offer free online web development courses.</h1>
+                            <p class="Subtitle">Join us today and the world of web development is at your fingertips.</p>
+                            <div class="BtnWrap">
+                                <a href="#join" class="Button">Join Us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Column2">
+                        <div class="ImgWrap">
+                            <img src="./assets/svg-2.svg" alt="Notebook" class="Img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="InfoContainer" id="learn">
+            <div class="InfoWrapper">
+                <div class="InfoRow reversed">
+                    <div class="Column1">
+                        <div class="TextWrapper">
+                            <p class="TopLine">Learn With Us</p>
+                            <h1 class="Heading">Our courses make it easy to develop for the web.</h1>
+                            <p class="Subtitle dark">We help you to learn valuable skills that kickstart your development journey.</p>
+                            <div class="BtnWrap">
+                                <a href="#join" class="Button dark">Courses</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Column2">
+                        <div class="ImgWrap">
+                            <img src="./assets/svg-4.svg" alt="Notebook" class="Img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="CoursesContainer" id="courses">
+            <h1 class="CoursesH1">Our Courses</h1>
+            <div class="CoursesWrapper">
+                <div class="CourseCard">
+                    <img src="./assets/svg-5.svg" alt="Svg" class="CourseIcon">
+                    <h2 class="CourseH2">HTML</h2>
+                    <p class="CourseP">Our Html course teaches you the basics of Html, the most basic skill required for web development.</p>
+                </div>
+                <div class="CourseCard">
+                    <img src="./assets/svg-6.svg" alt="Svg" class="CourseIcon">
+                    <h2 class="CourseH2">HTML</h2>
+                    <p class="CourseP">Our Html course teaches you the basics of Html, the most basic skill required for web development.</p>
+                </div>
+                <div class="CourseCard">
+                    <img src="./assets/svg-3.svg" alt="Svg" class="CourseIcon">
+                    <h2 class="CourseH2">HTML</h2>
+                    <p class="CourseP">Our Html course teaches you the basics of Html, the most basic skill required for web development.</p>
+                </div>
+            </div>
+        </div>
+        <div class="InfoContainer dark" id="join">
+            <div class="InfoWrapper">
+                <div class="InfoRow">
+                    <div class="Column1">
+                        <div class="TextWrapper">
+                            <p class="TopLine">Join Us</p>
+                            <h1 class="Heading light">Join us to recieve updates on our courses.</h1>
+                            <p class="Subtitle">We will email you about new or updated courses, you can unsubscribe at any time.</p>
+                            <div class="BtnWrap">
+                                <a href="#join" class="Button">Join Us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Column2">
+                        <div class="ImgWrap">
+                            <img src="./assets/svg-3.svg" alt="Notebook" class="Img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="FooterContainer">
+            <div class="FooterWrap">
+                <div class="FooterLinksContainer">
+                    <div class="FooterLinksWrapper">
+                        <div class="FooterLinkItems">
+                            <h1 class="FooterLinkTitle">Useful Links</h1>
+                            <a href="#about" class="FooterLink">About</a>
+                            <a href="#learn" class="FooterLink">Learn</a>
+                            <a href="#courses" class="FooterLink">Courses</a>
+                            <a href="#join" class="FooterLink">Join</a>
+                        </div>
+                    </div>
+                    <div class="FooterLinksWrapper">
+                        <div class="FooterLinkItems">
+                            <h1 class="FooterLinkTitle">Social media</h1>
+                            <a href="/" class="FooterLink">Twitter</a>
+                            <a href="/" class="FooterLink">Discord</a>
+                            <a href="/" class="FooterLink">Telegram</a>
+                            <a href="/" class="FooterLink">Gitub</a>
+                        </div>
+                    </div>
+                </div>
+                <section class="SocialMedia">
+                    <div class="SocialMediaWrap">
+                        <a href="#top" class="SocialLogo">
+                            <img src="./assets/fuchsialogo.png" alt="Logo" class="LogoImg"/>
+                        </a>
+                        <small class="WebsiteRights">Feng Shui © 2021 All Rights Reserved.</small>
+                        <div class="SocialIcons">
+                            <a href="/" class="SocialIconLink" aria-label="twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="/" class="SocialIconLink" aria-label="discord">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                            <a href="/" class="SocialIconLink" aria-label="telegram">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="/" class="SocialIconLink" aria-label="github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </footer>
+
+        <script src="scripts/index.js"></script>
+    </body>
+</html>
